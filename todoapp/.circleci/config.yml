@@ -2,6 +2,10 @@ version: 2
 jobs:
   build:
     working_directory: ~/code
+    build:
+        branches:
+          only:
+            - todo-mvp-clean
     docker:
       - image: circleci/android:api-25-alpha
     environment:
